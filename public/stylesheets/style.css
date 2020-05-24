@@ -131,14 +131,119 @@ body {
 /* ------------------------END----------------------------- */
 .main-menu {
   background-color: rgb(162, 223, 255);
-  height: 860px;
+  height: 914px;
   position: relative;
+  padding-right: 0px !important;
 }
-.main-list {
-  margin-top: 30px;
-  margin-left: -10px;
+.main-auth-list {
+  margin-top: 10px;
   font-size: 20px;
+  margin-left: -110px;
+ 
 }
-.main-list li{
+.main-auth-list li{
   list-style: none;
+  margin-top: 17px;
+}
+.main-auth-list li a{
+  margin-top: 10px;
+  color: rgb(246,251,254);
+}
+.main-auth-list li a:hover{
+  background-color: rgb(132, 212, 255);
+  border-radius: 10px;
+  padding : 10px 40px 10px 20px;/*tren phai duoi trai*/
+  color: black;
+  text-decoration: none;
+}
+.main-menu-manager-list {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: -110px;
+ 
+}
+.main-menu-manager-list li{
+  list-style: none;
+  margin-top: 17px;
+}
+.main-menu-manager-list li a{
+  margin-top: 10px;
+  color: rgb(246,251,254);
+}
+.main-menu-manager-list li a:hover{
+  background-color: rgb(132, 212, 255);
+  border-radius: 10px;
+  padding : 10px 40px 10px 20px;/*tren phai duoi trai*/
+  color: black;
+  text-decoration: none;
+}
+.parent-li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.small-icon {
+  font-size: 20px !important;
+}
+.active {
+  width: 200px;
+}
+h3 {
+  margin-top: 30px !important;
+  padding-left: 30px;
+  background-color: rgb(208, 237, 255);
+  color: black;
+}
+.main-auth-icon {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 255px;
+}
+.main-auth-icon:hover {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: -33px;
+  color: rgb(132, 212, 255);
+}
+.menu-manager-icon {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 255px;
+}
+.menu-manager-icon:hover {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: -33px;
+  color: rgb(132, 212, 255);
+}
+hr {
+  background-color:  rgba(255, 255, 255, 0.9);
+}
+.category-manager {
+  margin-left: 30px;
+}
+.dataTables_filter input {
+  padding: 0px 20px 0px 10px;
+  border-radius: 10px;
+  outline: 0;
+  font-size: 14px;
+  height: 30px;
+  width: 200px;
+  border: 1px solid rgb(113, 205, 255);
+}
+.dataTables_filter input::before {
+  content: "Search";
+}
+.dataTables_filter label{
+  color: transparent;
+}
+.card {
+  margin-top: 20px;
+  margin-right: 13px;
+}
+.add-user {
+margin-top: 27px;
+}
+.add-user .btn-add-user {
+  margin-left: 1530px;
+  color: white;
 }
