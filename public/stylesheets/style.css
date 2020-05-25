@@ -246,4 +246,20 @@ margin-top: 27px;
 .add-user .btn-add-user {
   margin-left: 1530px;
   color: white;
+  background-color: rgb(113, 205, 255);
+  border: 1px solid rgb(113, 205, 255) !important;
+}
+.add-user .btn-add-user:hover {
+  background-color: rgb(172, 226, 255);
+  transition: color 0.5;
+}
+.table-th {
+  background-color: #5c5f61;
+  text-align: center;
+  border: 1px solid rgb(246,251,254) !important;
+  color: white;
+}
+.table-td {
+  border-bottom: 1px solid rgb(226,236,243) !important;
+  text-align: center;
 }
