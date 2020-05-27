@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('#example').DataTable( {
         "lengthChange": false,
-        "pageLength": 15,
+        "pageLength": 12,
         "autoWidth" : false
     });
     $('.dataTables_filter input').prop("placeholder", "Search");

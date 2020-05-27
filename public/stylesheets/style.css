@@ -263,3 +263,34 @@ margin-top: 27px;
   border-bottom: 1px solid rgb(226,236,243) !important;
   text-align: center;
 }
+/* ---------------icon--------------------- */
+.fa-edit {
+  font-size: 25px !important;
+  margin-right: 7px;
+  color: rgb(113, 205, 255);
+}
+.fa-remove {
+  font-size: 29px !important;
+  color: red;
+}
+/* --------------end icon------------------ */
+.modal-content{
+  width: 900px !important;
+  margin-left: -180px !important;
+}
+
+/* ------------------form-------------------- */
+.form-label {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  width: 150px !important;
+  height: calc(1.5em + .75rem + 2px) !important;
+  text-align: center;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  display: inline-block;
+}
+.form-input {
+  display: inline-block !important;
+  width: 400px !important;
+}
