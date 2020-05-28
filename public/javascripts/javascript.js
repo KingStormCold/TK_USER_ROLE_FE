@@ -1,15 +1,21 @@
 $(document).ready(function(){
-    $('#example').DataTable( {
+    var table = $('#example').DataTable( {
         "lengthChange": false,
-        "pageLength": 12,
+        "pageLength": 2,
         "autoWidth" : false
     });
     $('.dataTables_filter input').prop("placeholder", "Search");
+    $('#example').on( 'page.dt', function () {
+        var info = table.page.info();
+        console.log( 'Showing page: '+info.page+' of '+info.pages );
+        // $('#example').DataTable().clear().draw();
+    });
 });
 
 $('#avatar-img').click(function(){
     $('.personal-info-header').slideToggle(200);
 });
+
 $('.icon-menu').click(function(){
     alert("CLick Click");
 });
