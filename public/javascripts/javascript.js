@@ -1,14 +1,22 @@
 $(document).ready(function(){
     var table = $('#example').DataTable( {
         "lengthChange": false,
-        "pageLength": 2,
-        "autoWidth" : false
+        "pageLength": 10,
+        "autoWidth" : false,
+        "info": false,
+        "paging": false
     });
     $('.dataTables_filter input').prop("placeholder", "Search");
     $('#example').on( 'page.dt', function () {
         var info = table.page.info();
         console.log( 'Showing page: '+info.page+' of '+info.pages );
         // $('#example').DataTable().clear().draw();
+    });
+    $('#pagination-user').twbsPagination({
+        totalPages: 10,
+        visiblePages: 5,
+        onPageClick: function (event, page) {
+        }
     });
 });
 

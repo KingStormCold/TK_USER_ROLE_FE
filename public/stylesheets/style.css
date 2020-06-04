@@ -2,6 +2,7 @@ body {
   box-sizing: auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  height: 100%;
 }
 .clearfix::after {
   content: "";
@@ -131,7 +132,7 @@ body {
 /* ------------------------END----------------------------- */
 .main-menu {
   background-color: rgb(162, 223, 255);
-  height: 914px;
+  height: 93.3vh;
   position: relative;
   padding-right: 0px !important;
 }
@@ -184,7 +185,7 @@ body {
 .small-icon {
   font-size: 20px !important;
 }
-.active {
+.active-span {
   width: 200px;
 }
 h3 {
@@ -223,7 +224,7 @@ hr {
 }
 .dataTables_filter input {
   padding: 0px 20px 0px 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   outline: 0;
   font-size: 14px;
   height: 30px;
@@ -293,4 +294,11 @@ margin-top: 27px;
 .form-input {
   display: inline-block !important;
   width: 400px !important;
+}
+/* --------------------table--------------------- */
+#pagination-user {
+  position: absolute;
+  margin-top: 27px;
+  left: 50%;
+  transform: translateX(-50%);
 }
