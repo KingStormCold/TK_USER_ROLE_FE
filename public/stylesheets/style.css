@@ -228,7 +228,7 @@ hr {
   outline: 0;
   font-size: 14px;
   height: 30px;
-  width: 200px;
+  width: 320px;
   border: 1px solid rgb(113, 205, 255);
 }
 .dataTables_filter input::before {
@@ -291,9 +291,17 @@ margin-top: 27px;
   border-radius: .25rem;
   display: inline-block;
 }
+.form-label-hidden {
+  width: 150px !important;
+}
 .form-input {
   display: inline-block !important;
-  width: 400px !important;
+  width: 300px !important;
+}
+.form-avatar-profile {
+  width: 200px;
+  height: 150px;
+  margin-top: -20px;
 }
 /* --------------------table--------------------- */
 #pagination-user {

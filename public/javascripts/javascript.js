@@ -1,12 +1,16 @@
 $(document).ready(function(){
     var table = $('#example').DataTable( {
         "lengthChange": false,
-        "pageLength": 10,
+        "pageLength": 12,
         "autoWidth" : false,
         "info": false,
-        "paging": false
+        "paging": false,
+        scrollY: '60vh',
+        scrollCollapse: true,
     });
+
     $('.dataTables_filter input').prop("placeholder", "Search");
+    
     $('#example').on( 'page.dt', function () {
         var info = table.page.info();
         console.log( 'Showing page: '+info.page+' of '+info.pages );
@@ -20,6 +24,21 @@ $(document).ready(function(){
     });
 });
 
+$('#form-avatar').change(function(){
+    openImage(this, $("#avater-review"));
+});
+
+function openImage(input, imageView) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $(imageView).attr('src', reader.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    } else {
+        $(imageView).attr('src', "");
+    }
+}
 $('#avatar-img').click(function(){
     $('.personal-info-header').slideToggle(200);
 });
