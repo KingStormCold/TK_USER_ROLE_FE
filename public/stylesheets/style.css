@@ -303,6 +303,30 @@ margin-top: 27px;
   height: 150px;
   margin-top: -20px;
 }
+.checkbox-role {
+  width:19px;
+  height:19px;
+  margin:-3px 5px 0px 10px;
+  vertical-align:middle;
+  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+  cursor:pointer;
+}
+.have-role, .not-role {
+  display: -webkit-inline-box;
+  border: 1px solid #e9ecef;
+  max-width: 300px !important;
+  border-radius: 7px;
+}
+.span-role {
+  display: inline-block;
+  width: 298px;
+  margin-left: -15px;
+  background-color: #e9ecef;
+  text-align: center;
+  height: 37px;
+  padding-top: 6px;
+  border-radius: 6px 6px 0px 0px;
+}
 /* --------------------table--------------------- */
 #pagination-user {
   position: absolute;

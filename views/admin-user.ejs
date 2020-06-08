@@ -68,7 +68,22 @@
                                         </div>
                                         <div class ="form-group">
                                             <label for="usr" class="form-label">Role</label>
-                                            <input type="text" class="form-control form-input">
+                                            <div style=" display: -webkit-inline-box;" class = "col-sm-4 have-role"> 
+                                                <p class = "span-role">Have rights</p>
+                                                <% for (var i=0; i <= 20 ;i++ ){ %>
+                                                    <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>12312321321312</label>
+                                                <% } %>
+                                            </div>
+                                            <div style=" display: -webkit-inline-box;" class = "col-sm-4 not-role"> 
+                                                <p class = "span-role">List Role</p>
+                                                <% for (var i=0; i <= 30 ;i++ ){ %>
+                                                    <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>123123</label>
+                                                <% } %>
+                                            </div>
+                                        </div>
+                                        <div class ="form-group">
+                                            <label for="usr" class="form-label">Avatar</label>
+                                            <input type="file" style="padding-top: 3px;" class="form-control form-input" id = "form-avatar">
                                         </div>
                                     </form>
                                 </div>
