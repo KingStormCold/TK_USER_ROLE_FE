@@ -276,7 +276,7 @@ margin-top: 27px;
 }
 /* --------------end icon------------------ */
 .modal-content{
-  width: 900px !important;
+  width: 795px !important;
   margin-left: -180px !important;
 }
 
@@ -296,7 +296,7 @@ margin-top: 27px;
 }
 .form-input {
   display: inline-block !important;
-  width: 300px !important;
+  width: 450px !important;
 }
 .form-avatar-profile {
   width: 200px;
@@ -326,6 +326,16 @@ margin-top: 27px;
   height: 37px;
   padding-top: 6px;
   border-radius: 6px 6px 0px 0px;
+}
+.role-header {
+  height: 37px;
+  display: inline-block;
+}
+.role-have-right, .list-role {
+  margin-top: 10px;
+  display: inline-block;
+  overflow-y: scroll;
+  height: 250px;
 }
 /* --------------------table--------------------- */
 #pagination-user {

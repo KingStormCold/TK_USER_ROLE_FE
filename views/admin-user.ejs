@@ -68,17 +68,25 @@
                                         </div>
                                         <div class ="form-group">
                                             <label for="usr" class="form-label">Role</label>
-                                            <div style=" display: -webkit-inline-box;" class = "col-sm-4 have-role"> 
-                                                <p class = "span-role">Have rights</p>
-                                                <% for (var i=0; i <= 20 ;i++ ){ %>
-                                                    <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>12312321321312</label>
-                                                <% } %>
+                                            <div style=" display: -webkit-inline-box;" class = "col-sm-4 have-role">
+                                                <div class = "role-header">
+                                                    <p class = "span-role">Have rights</p>
+                                                </div>
+                                                <div class = "role-have-right">
+                                                    <% for (var i=0; i <= 20 ;i++ ){ %>
+                                                        <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>12312321321312</label>
+                                                    <% } %>
+                                                </div>
                                             </div>
                                             <div style=" display: -webkit-inline-box;" class = "col-sm-4 not-role"> 
-                                                <p class = "span-role">List Role</p>
-                                                <% for (var i=0; i <= 30 ;i++ ){ %>
-                                                    <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>123123</label>
-                                                <% } %>
+                                                <div class = "role-header">
+                                                    <p class = "span-role">List Role</p>
+                                                </div>
+                                                <div class = "list-role">
+                                                    <% for (var i=0; i <= 30 ;i++ ){ %>
+                                                        <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>123123</label>
+                                                    <% } %>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class ="form-group">
