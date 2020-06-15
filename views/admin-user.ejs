@@ -24,84 +24,79 @@
                     <div class="modal" id="myModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
+                                <form action="/user-role/user" method="GET" enctype="multipart/form-data">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Insert User</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
 
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Insert User</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <form action="" method="POST" enctype="multipart/form-data">
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">User name</label>
-                                            <input type="text" class="form-control form-input">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Password</label>
-                                            <input type="text" class="form-control form-input">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Full name</label>
-                                            <input type="text" class="form-control form-input">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Email</label>
-                                            <input type="text" class="form-control form-input">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Phone</label>
-                                            <input type="text" class="form-control form-input">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Address</label>
-                                            <input type="text" class="form-control form-input">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Avatar</label>
-                                            <input type="file" style="padding-top: 3px;" class="form-control form-input" id = "form-avatar">
-                                        </div>
-                                        <div class ="">
-                                            <label class ="form-label-hidden"></label>
-                                            <img src="" alt="Image" class = "form-avatar-profile" id = "avater-review">
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Role</label>
-                                            <div style=" display: -webkit-inline-box;" class = "col-sm-4 have-role">
-                                                <div class = "role-header">
-                                                    <p class = "span-role">Have rights</p>
+                                    <!-- Modal body -->
+                                    <div class="modal-body modal-user">
+                                        
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">User name</label>
+                                                <input type="text" class="form-control form-input" name="user_name" placeholder="Ex: tuankul">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Password</label>
+                                                <input type="text" class="form-control form-input" name = "password" placeholder="Ex: 123456">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Full name</label>
+                                                <input type="text" class="form-control form-input" name="full_name" placeholder="Ex: Thái Thanh Tuấn">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Email</label>
+                                                <input type="email" class="form-control form-input" name="email" placeholder="Ex: test@gmail.com">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Phone</label>
+                                                <input type="number" class="form-control form-input" name = "phone" placeholder="012332323232">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Address</label>
+                                                <input type="text" class="form-control form-input" name = "address" placeholder="349 Nguyễn Đình Chiểu Quận 1">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Avatar</label>
+                                                <input type="file" style="padding-top: 3px;" class="form-control form-input" id = "form-avatar">
+                                            </div>
+                                            <div class ="">
+                                                <label class ="form-label-hidden"></label>
+                                                <img src="" alt="avatar" class = "form-avatar-profile" id = "avater-review">
+                                            </div>
+                                            <div class ="form-group">
+                                                <label for="usr" class="form-label">Role</label>
+                                                <div style=" display: -webkit-inline-box;" class = "col-sm-4 have-role">
+                                                    <div class = "role-header">
+                                                        <p class = "span-role">Have rights</p>
+                                                    </div>
+                                                    <div class = "role-have-right">
+                                                        <% for (var i=0; i <= 20 ;i++ ){ %>
+                                                            <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>12312321321312</label>
+                                                        <% } %>
+                                                    </div>
                                                 </div>
-                                                <div class = "role-have-right">
-                                                    <% for (var i=0; i <= 20 ;i++ ){ %>
-                                                        <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>12312321321312</label>
-                                                    <% } %>
+                                                <div style=" display: -webkit-inline-box;" class = "col-sm-4 not-role"> 
+                                                    <div class = "role-header">
+                                                        <p class = "span-role">List Role</p>
+                                                    </div>
+                                                    <div class = "list-role">
+                                                        <% for (var i=0; i <= 30 ;i++ ){ %>
+                                                            <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>123123</label>
+                                                        <% } %>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div style=" display: -webkit-inline-box;" class = "col-sm-4 not-role"> 
-                                                <div class = "role-header">
-                                                    <p class = "span-role">List Role</p>
-                                                </div>
-                                                <div class = "list-role">
-                                                    <% for (var i=0; i <= 30 ;i++ ){ %>
-                                                        <label><input type="checkbox" value="" class = "checkbox-role"><%= i %>123123</label>
-                                                    <% } %>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class ="form-group">
-                                            <label for="usr" class="form-label">Avatar</label>
-                                            <input type="file" style="padding-top: 3px;" class="form-control form-input" id = "form-avatar">
-                                        </div>
-                                    </form>
-                                </div>
+                                    </div>
 
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-success" >Create</button>
-                                </div>
-
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-success" >Create</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -264,4 +259,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 <script src="/javascripts/pagination.js"></script>
+<script src="/javascripts/js-admin-user.js"></script>
 </html>

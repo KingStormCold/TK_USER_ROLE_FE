@@ -275,11 +275,16 @@ margin-top: 27px;
   color: red;
 }
 /* --------------end icon------------------ */
+/* --------------[START] modal------------- */
 .modal-content{
-  width: 795px !important;
+  width: 820px !important;
   margin-left: -180px !important;
 }
-
+.modal-user {
+  overflow-y: scroll;
+  height: 740px;
+}
+/* ----------------[END] modal------------- */
 /* ------------------form-------------------- */
 .form-label {
   background-color: #e9ecef;
@@ -296,7 +301,7 @@ margin-top: 27px;
 }
 .form-input {
   display: inline-block !important;
-  width: 450px !important;
+  width: 605px !important;
 }
 .form-avatar-profile {
   width: 200px;
@@ -344,3 +349,7 @@ margin-top: 27px;
   left: 50%;
   transform: translateX(-50%);
 }
+#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 400px;  /* The width is the width of the web page */
+ }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tuan kul</title>
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, user-scalable=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+</head>
+
+<body>
+    <main>
+        <% include template/admin-header %>
+        <div class="row">
+            <% include template/admin-menu %>
+            <div class="col-sm-10 main-content">
+                <div>
+                    <div class="add-user">
+                        <a title="Add user" class="btn btn-primary btn-add-user" data-toggle="modal" data-target="#myModal" data-keyboard="false" data-backdrop="static">+</a>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form action="/user-role/user" method="GET" enctype="multipart/form-data">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Insert Role</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body modal-role">
+                                        <div class ="form-group">
+                                            <label for="usr" class="form-label">Name</label>
+                                            <input type="text" class="form-control form-input" name="user_name">
+                                        </div>
+                                        <div class ="form-group">
+                                            <label for="usr" class="form-label">Description</label>
+                                            <input type="text" class="form-control form-input" name = "password">
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-success" >Create</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="data-tables">
+                                <table id="example" class="hover">
+                                    <thead class="text-capitalize">
+                                        <tr>
+                                            <th class="table-th">No.</th>
+                                            <th class="table-th">Created By</th>
+                                            <th class="table-th">Created Date</th>
+                                            <th class="table-th">Name</th>
+                                            <th class="table-th">Description</th>
+                                            <th class="table-th">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-td">123123</td>
+                                            <td class="table-td">123123</td>
+                                            <td class="table-td">123123</td>
+                                            <td class="table-td">123123</td>
+                                            <td class="table-td">123123</td>
+                                            <td class="table-td"><i class ="fa fa-edit"></i><i class ="fa fa-remove icon-small"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class = "pagination-sm" id="pagination-user"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="/javascripts/javascript.js"></script>
+<script src="https://use.fontawesome.com/b59cf34d3a.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<script src="/javascripts/pagination.js"></script>
+<script src="/javascripts/js-admin-role.js"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtlZhr8hOfOeKKrGiW-p2wORKJ4R-Bets&callback=initMap">
+</script>
+</html>
