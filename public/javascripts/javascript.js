@@ -1,15 +1,24 @@
 $(document).ready(function(){
     
 });
+var map;
 function initMap() {
-    var uluru = {lat: 102.8, lng: 109.27};
+    var cairo = {lat: 10.787617 , lng: 106.705788};
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: uluru
+      scaleControl: true,
+      center: cairo,
+      zoom: 10
     });
-    
-  }
+
+    var infowindow = new google.maps.InfoWindow;
+    infowindow.setContent('<b>Thao Cam Vien</b>');
+
+    var marker = new google.maps.Marker({map: map, position: cairo});
+    marker.addListener('click', function() {
+      infowindow.open(map, marker);
+    });
+}
 $('#avatar-img').click(function(){
     $('.personal-info-header').slideToggle(200);
 });
